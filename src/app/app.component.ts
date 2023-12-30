@@ -11,4 +11,10 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'Problem4';
+  
+  public contentLength : number = 0;
+
+  public onKeyUp(value : string) {
+    this.contentLength = value.length;
+  }
 }
